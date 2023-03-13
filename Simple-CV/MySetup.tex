@@ -1,0 +1,78 @@
+% !TEX root = Simple-CV.tex
+%-------------------------------------------------------------------------------------------------------
+% Packages
+%-------------------------------------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{fontawesome}
+\usepackage{datetime}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[colorlinks=true, urlcolor=ColorTwo]{hyperref}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{sectsty}
+\usepackage{multicol}
+\usepackage{adjustbox}
+\usepackage{wasysym}
+\usepackage{ragged2e}
+\usepackage{nicematrix}
+\usepackage{tabularray}
+%-------------------------------------------------------------------------------------------------------
+% Layout
+%-------------------------------------------------------------------------------------------------------
+\pagenumbering{gobble}
+\renewcommand{\baselinestretch}{1.5} 
+\setlength{\parindent}{0pt}
+
+%
+% Color theme
+%
+%\definecolor{ColorOne}{RGB}{4, 30, 66} 	% GUBlue
+%\definecolor{ColorOne}{RGB}{12, 30, 80} 	% Blue
+\definecolor{ColorOne}{RGB}{26, 65, 0} 	% Green
+\definecolor{ColorTwo}{RGB}{128,128,128} 	% Gray
+%\definecolor{ColorTwo}{RGB}{140,100,0} 	% Gold
+
+\sectionfont{\color{ColorOne}} 
+\subsectionfont{\color{ColorOne}} 
+
+%
+% Vertical line
+%
+\newcommand{\MyVerticalRule}{%
+	\textcolor{ColorOne}{\rule{1pt}{\textheight}}
+}
+
+%
+% Update
+%
+\newcommand{\LastUpdate}{%
+\vfill
+\centering \small
+\textcolor{ColorOne}{Last updated: \monthname,~\the\year.}
+}
+
+%
+% Skip
+%
+\newcommand{\MySkip}{
+\vskip12pt
+}
+
+%
+% Format hyperrefs
+%
+\newcommand{\myhref}[2]{%
+\href{#1}{\textcolor{ColorTwo}{#2}}
+}
+%
+% Format skill bullets
+%
+\newcommand{\SkillBull}[1]{%
+\textcolor{ColorTwo}{#1}
+}
+

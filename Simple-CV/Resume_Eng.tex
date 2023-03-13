@@ -1,0 +1,232 @@
+%
+% Simple asymmetric two-column CV 
+% Author: Sofia JIJON
+%
+
+\documentclass[a3paper,11pt]{article}
+\usepackage[vmargin=1.5cm, hmargin=1.5cm]{geometry}
+\input{MySetup}
+%-------------------------------------------------------------------------------------------------------
+
+\begin{document}
+\thispagestyle{empty}
+
+%-------------------------------------------------------------------------------------------------------
+% Left column
+%-------------------------------------------------------------------------------------------------------
+\begin{adjustbox}{valign=t}
+\begin{minipage}{0.3\textwidth} % Adapt width to your convenience
+%----------------------------------------------------
+% Please add a photo in 1x1 format
+\begin{center}
+\begin{tikzpicture}
+	\clip (0,0) circle (2cm) node {\includegraphics[width=4cm]{Simple-CV/Photo.png}};
+\end{tikzpicture}
+
+\MySkip 	% See MySetup.tex file
+
+%----------------------------------------------------
+{\LARGE \bfseries Alejandro Ramírez Restrepo}
+
+\MySkip 	% See MySetup.tex file
+
+Born on October 16\textsuperscript{th}, 1995\\
+Medellín -- Colombia\\
+Economist\\
+
+\MySkip 	% See MySetup.tex file
+
+\textcolor{ColorTwo}{\faEnvelopeO} {\myhref{mailto:alejandro.ramirez10@udea.edu.co}{alejandro.ramirez10@udea.edu.co}} \\
+
+\textcolor{ColorTwo}{\faLinkedin} 
+\myhref{https://www.linkedin.com/in/alejandro-ramirez-796894173/}{Alejandro Ramirez}
+\\
+\textcolor{ColorTwo}{\faMobile}
+\myhref{tel:+57 318 505 2908}{+57 318 505 2908}
+\end{center}
+
+
+
+\vfill
+
+%----------------------------------------------------
+\section*{Interests}
+\raggedright
+\textcolor{ColorOne}{$\circ$} Machine Learning\\
+\textcolor{ColorOne}{$\circ$} Data Science\\
+\textcolor{ColorOne}{$\circ$} Deep Learning\\
+\textcolor{ColorOne}{$\circ$} Research
+
+\vfill
+
+%----------------------------------------------------
+\section*{Education}
+\begin{tblr}{}
+	{\hypersetup{urlcolor=black}\href{https://github.com/AlRamirezRe/Resume-Documents/blob/master/ACTA-HV1152210514.pdf}{\textbf{B.Sc. in
+Economics}}} & \normalfont \textcolor{ColorOne}{March, 2023} \\
+	\SetCell[c=2]{c} Universidad de Antioquia &  \\
+        \SetCell[c=2]{c} Medellín -- Colombia	&  \\
+\end{tblr}
+
+\begin{tikzpicture}[remember picture,overlay]
+\node[inner sep=0pt,anchor=south west] (UdeA_Green) at (1.76cm, -16.46cm)
+{\includegraphics[width=0.55\textwidth]{Simple-CV/Images/logosimbolo-vertical.png}};
+\end{tikzpicture}
+
+\vfill
+\end{minipage}
+\end{adjustbox}
+%
+%
+%-------------------------------------------------------------------------------------------------------
+% Vertical rule
+%-------------------------------------------------------------------------------------------------------
+%
+\hfill
+\begin{adjustbox}{valign=t}
+\begin{minipage}{0.05\textwidth} % Adapt width to your convenience
+\MyVerticalRule  % See MySetup.tex file
+\end{minipage}
+\end{adjustbox}
+\hfill
+%
+%-------------------------------------------------------------------------------------------------------
+% Right column
+%-------------------------------------------------------------------------------------------------------
+\begin{adjustbox}{valign=t}
+\begin{minipage}{0.6\textwidth} % Adapt width to your convienience
+\section*{Experience}
+
+\begin{description}
+\raggedright
+\item[\normalfont \textcolor{ColorOne}{Aug. 2021 -- May. 2022}] \textbf{Research Assistant}\\ \medskip
+For \myhref{https://www.linkedin.com/in/daniel-valderrama-752469106/}{Daniel Valderrama Gonzalez, Ph.D.}\\
+
+\justify{
+\begin{itemize}[label={$\circ$}]
+    \item Developed professional data analysis and summaries on easily readable graphs made in Python.
+
+    \item Provided assistance in his doctoral dissertation for Georgetown University; \LaTeX.
+    
+    \item Research and data prep for a World Bank Blog regarding pre- and post-COVID-19 pandemic labor force levels in Latin America and the Caribbean.
+\end{itemize}
+}
+\end{description}
+
+\begin{description}
+\raggedright
+\item[\normalfont \textcolor{ColorOne}{Jul. 2022 -- Feb. 2023}] \textbf{Research Assistant}\\ \medskip
+In the consultancy with CI 600013749 of 2022 between \myhref{https://www.linkedin.com/school/udea-/mycompany/}{\textit{Universidad de Antioquia}} and \myhref{https://www.linkedin.com/in/gobantioquia/}{\textit{Gobernación de Antioquia}}
+
+\justify{
+\begin{itemize}[label={$\circ$}]
+    \item Designed polls and audited its adaptation to an android app in which responses would be inputted. 
+
+    \item Data prep and cleaning for inference and prediction models using Excel and Python.
+    
+    \item Researched and implemented the Bag-of-Words model as a tool for Natural Language Processing and accuracy comparisons between different deep learning models. 
+\end{itemize}
+}
+\end{description}
+
+%----------------------------------------------------
+\section*{Achievements}
+\begin{description}
+\raggedright
+
+\item[\normalfont \textcolor{ColorOne}{2023}] 
+	\textbf{Academic Distinction}\\ \medskip
+	
+	\myhref{https://github.com/AlRamirezRe/Resume-Documents/blob/master/Mencion-promedio_acumulado-2023.pdf}{Highest overall GPA in the faculty}\\
+ 
+\item[\normalfont \textcolor{ColorOne}{2022}] 
+	\textbf{C2 Certificate of Proficiency}\\ \medskip
+	
+	\myhref{https://github.com/AlRamirezRe/Documents/blob/ac76605cbf74246e871f43b2249593538a885f85/EFSETCertificate.pdf}{EF Standard English Test (EF SET)}\\
+
+\item[\normalfont \textcolor{ColorOne}{2022}] 
+	\textbf{CANE Contestant}\\ \medskip
+	
+	\myhref{https://github.com/AlRamirezRe/Documents/blob/master/Cane.pdf}{Concurso Académico Nacional de Economía} 
+
+ \item[\normalfont \textcolor{ColorOne}{2020/1}] 
+	\textbf{Academic Distinction}\\ \medskip
+	
+	\myhref{https://github.com/AlRamirezRe/Documents/blob/eb53c85ec412ed4fa813c696f29e8692a2cd9c34/MHonor20201.pdf}{Universidad de Antioquia}\\
+	
+\end{description}
+
+\iffalse
+%----------------------------------------------------
+\section*{Publications}
+\begin{description}
+	\raggedright
+	\item \underline{Name, Y.}, Second Author, N., Third Author, N. et al. \textbf{(2019)} A great title {\it Journal}. doi:~\myhref{https://doi.org/xx.yyy/zzz.12345}{xx.yyy/zzz.12345}
+
+	\item First Author, T., \underline{Name, Y.}, Third Author, N. et al. \textbf{(2015)} A long title for a great study{\it Journal}. doi:~\myhref{https://doi.org/xx.yyy/zzz.54321}{xx.yyy/zzz.54321}
+	
+\end{description}
+%----------------------------------------------------
+\section*{Oral communications}
+\begin{description}
+	\raggedright
+	\item \underline{Name, Y.}, Second Author, N., Third Author, N. et al. \textbf{(2019)} The title of a talk you did. {\it Conference}, November 16, 2006, City, Country.
+\end{description}
+
+\fi
+
+\MySkip
+%----------------------------------------------------
+\begin{multicols}{2}
+\section*{Technical Skills}
+\begin{tblr}{
+vline{2}={1-3}{Gray!25,1pt},
+}
+	Python & R \\
+	\LaTeX & Excel \\
+	SQL	& Power BI \\
+\end{tblr}
+
+\vfill\null \columnbreak  % Break column for new section
+
+\section*{Languages}
+\begin{tblr}{
+% vline{2}={1-3}{gray!20,1pt},
+}
+	Spanish: native & \\
+	English: C1 - C2 &  \\
+\end{tblr}
+\end{multicols}
+%----------------------------------------------------
+\section*{References}
+
+\begin{multicols}{2}
+
+\raggedright
+\begin{tabular}{l}
+\textbf{Daniel Valderrama}  \\
+\textit{Extended Term Consultant II} \\
+World Bank - Washington, DC\\
+Ph.D. in Economics \\
+Georgetown University\\
+dv348@georgetown.edu
+
+\end{tabular}
+
+\vfill\null \columnbreak  % Break column for new section
+
+\begin{tabular}{l}
+\textbf{Santiago Gallón} \\
+\textit{Full Professor} \\
+Universidad de Antioquia\\
+Ph.D. in Applied Mathematics \\
+Université de Toulouse III - Paul Sabatier -\\
+santiago.gallon@udea.edu.co
+\end{tabular}
+\end{multicols}
+%----------------------------------------------------
+\LastUpdate
+%----------------------------------------------------
+\end{minipage}
+\end{adjustbox}
+\end{document}
